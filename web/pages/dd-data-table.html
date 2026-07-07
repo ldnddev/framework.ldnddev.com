@@ -1,0 +1,125 @@
+<h1>Data Table Component Breakdown</h1>
+<div class="dd-section">
+  <div class="dd-section__content">
+    <div class="dd-section__items dd-g">
+      <div class="dd-section__item dd-u-1-1">
+        <h2>Overview</h2>
+        <p>
+          The dd-data-table component is an accessible table with a caption,
+          scoped header cells, and optional status cells that embed the dd-badge
+          component. It wraps the table in a keyboard-focusable horizontal
+          scroll region and supports optional column sorting and an empty state.
+        </p>
+        <p>
+          This component is ideal for report data, comparison grids, and audit
+          result listings. In WordPress, configure it via a repeater of rows and
+          a header definition, with a status column mapped to badge severities.
+          In Drupal, use a Views table or a Paragraph type with structured field
+          data.
+        </p>
+        <h2>Basic Usage</h2>
+        <p>
+          Wrap a semantic <em>&lt;table&gt;</em> with a <em>&lt;caption&gt;</em>
+          and <em>&lt;th scope&gt;</em> headers inside the
+          <em>dd-data-table</em> container. Status cells embed a dd-badge, and
+          sortable columns use native header buttons. The scroll region and
+          sorting behaviour are wired up by the component JS.
+        </p>
+
+        <div class="dd-tabs" data-id="013">
+          <div class="dd-tabs__content dd-g">
+            <ul class="dd-tabs__menu dd-g" role="tablist">
+              <li class="dd-tabs__menu-item" role="presentation">
+                <a
+                  href="#tab-016"
+                  class="dd-tabs__menu-link -active"
+                  id="tab-016"
+                  aria-selected="true"
+                  aria-controls="tabpanel-016"
+                  hx-trigger="click once"
+                  hx-get="/templates/components/dd-data-table.html"
+                  hx-on::after-request="escape_code_block()"
+                  hx-target="#view_code"
+                  >Code</a
+                >
+              </li>
+              <li class="dd-tabs__menu-item" role="presentation">
+                <a
+                  href="#tab-017"
+                  class="dd-tabs__menu-link"
+                  id="tab-017"
+                  aria-selected="false"
+                  aria-controls="tabpanel-017"
+                  hx-trigger="click once"
+                  hx-get="/templates/components/dd-data-table.html"
+                  hx-target="#preview_code"
+                  >Preview</a
+                >
+              </li>
+            </ul>
+            <div class="dd-tabs__items dd-g">
+              <div
+                class="dd-tabs__item dd-u-1-1 -active"
+                id="tabpanel-016"
+                role="tabpanel"
+                aria-hidden="false"
+                aria-labelledby="tab-016"
+              >
+                <pre>
+                <code id="view_code">
+                </code>
+                </pre>
+              </div>
+              <div
+                class="dd-tabs__item dd-u-1-1"
+                id="tabpanel-017"
+                role="tabpanel"
+                aria-hidden="false"
+                aria-labelledby="tab-017"
+              >
+                <div id="preview_code"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p>Provide an empty state row when there is no data to display.</p>
+
+        <h2>CSS Modifiers (from _dd_data_table.scss)</h2>
+        <p>
+          The SCSS file defines the table layout, cell padding, scroll region,
+          and focus styling. Key modifiers include:
+        </p>
+        <ul>
+          <li>
+            <em>-dense</em>: Reduces cell padding for compact, data-heavy
+            tables.
+          </li>
+          <li>
+            No modifier: Default comfortable spacing for standard readability.
+          </li>
+        </ul>
+
+        <h2>Framework files</h2>
+        <ul>
+          <li>source/js/components/_dd_data_table.js (scroll region and sort)</li>
+          <li>source/scss/components/_dd_data_table.scss (styles)</li>
+        </ul>
+
+        <h2>Accessibility and Best Practices</h2>
+        <p>
+          The <em>&lt;caption&gt;</em> names the table, and header cells use
+          <em>&lt;th scope&gt;</em> for correct association. The scroll region
+          receives <em>tabindex="0"</em>, <em>role="region"</em>, and an
+          <em>aria-label</em> from the JS only when it actually overflows, so
+          keyboard users can scroll without adding an empty tab stop otherwise.
+          Sortable headers are native <em>&lt;button&gt;</em> elements with
+          <em>aria-sort</em> set on the <em>&lt;th&gt;</em> (exactly one column
+          non-none at a time), and sorting is fully keyboard-operable. The focus
+          ring uses a high-contrast dark colour rather than the brand green so
+          it stays visible on all cell backgrounds.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,123 @@
+<h1>Badge Component Breakdown</h1>
+<div class="dd-section">
+  <div class="dd-section__content">
+    <div class="dd-section__items dd-g">
+      <div class="dd-section__item dd-u-1-1">
+        <h2>Overview</h2>
+        <p>
+          The dd-badge component is a compact, non-interactive pill used to
+          communicate a status or severity level at a glance, such as critical,
+          warning, info, or pass. Its colour-coded surface pairs with a short
+          text label for fast, scannable recognition.
+        </p>
+        <p>
+          This component is ideal for audit summaries, dashboards, and inline
+          status indicators next to titles or table cells. In WordPress,
+          configure it via ACF fields for severity and label. In Drupal, use a
+          Paragraph type with a select field for severity and a text field for
+          the label, allowing dynamic rendering based on data.
+        </p>
+        <h2>Basic Usage</h2>
+        <p>
+          Wrap the badge in a container with class <em>dd-badge</em> and place
+          the visible text inside a <em>dd-badge__label</em> element. Apply a
+          severity modifier such as <em>-critical</em> or omit it for the
+          neutral variant. An optional <em>dd-badge__icon</em> may precede the
+          label.
+        </p>
+
+        <div class="dd-tabs" data-id="010">
+          <div class="dd-tabs__content dd-g">
+            <ul class="dd-tabs__menu dd-g" role="tablist">
+              <li class="dd-tabs__menu-item" role="presentation">
+                <a
+                  href="#tab-010"
+                  class="dd-tabs__menu-link -active"
+                  id="tab-010"
+                  aria-selected="true"
+                  aria-controls="tabpanel-010"
+                  hx-trigger="click once"
+                  hx-get="/templates/components/dd-badge.html"
+                  hx-on::after-request="escape_code_block()"
+                  hx-target="#view_code"
+                  >Code</a
+                >
+              </li>
+              <li class="dd-tabs__menu-item" role="presentation">
+                <a
+                  href="#tab-011"
+                  class="dd-tabs__menu-link"
+                  id="tab-011"
+                  aria-selected="false"
+                  aria-controls="tabpanel-011"
+                  hx-trigger="click once"
+                  hx-get="/templates/components/dd-badge.html"
+                  hx-target="#preview_code"
+                  >Preview</a
+                >
+              </li>
+            </ul>
+            <div class="dd-tabs__items dd-g">
+              <div
+                class="dd-tabs__item dd-u-1-1 -active"
+                id="tabpanel-010"
+                role="tabpanel"
+                aria-hidden="false"
+                aria-labelledby="tab-010"
+              >
+                <pre>
+                <code id="view_code">
+                </code>
+                </pre>
+              </div>
+              <div
+                class="dd-tabs__item dd-u-1-1"
+                id="tabpanel-011"
+                role="tabpanel"
+                aria-hidden="false"
+                aria-labelledby="tab-011"
+              >
+                <div id="preview_code"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p>Use spacers or inline gaps when placing multiple badges in a row.</p>
+
+        <h2>CSS Modifiers (from _dd_badge.scss)</h2>
+        <p>
+          The SCSS file defines the base pill shape, padding, and typography,
+          with severity modifiers mapping to design tokens. Key modifiers
+          include:
+        </p>
+        <ul>
+          <li><em>-critical</em>: Error tokens for the most severe status.</li>
+          <li><em>-warning</em>: Warning tokens for cautionary status.</li>
+          <li><em>-info</em>: Info tokens for neutral informational status.</li>
+          <li><em>-pass</em>: Success tokens for passing or healthy status.</li>
+          <li>
+            No modifier: Neutral variant using default surface tokens for
+            unclassified status.
+          </li>
+        </ul>
+
+        <h2>Framework files</h2>
+        <ul>
+          <li>source/scss/components/_dd_badge.scss (styles)</li>
+        </ul>
+
+        <h2>Accessibility and Best Practices</h2>
+        <p>
+          Meaning is carried by the <em>dd-badge__label</em> text, never by
+          colour alone (WCAG 1.4.1 Use of Colour), so a badge remains
+          understandable in greyscale or to colour-blind users. The optional
+          <em>dd-badge__icon</em> is decorative and marked
+          <em>aria-hidden="true"</em>. The badge is non-interactive, so it takes
+          no role, tabindex, or focus. Keep labels short and unambiguous, and
+          ensure the surface and text colours meet WCAG AA contrast.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

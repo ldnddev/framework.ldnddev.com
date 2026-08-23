@@ -68,8 +68,8 @@
 // The following block includes the default axe-cli options
 @use "components/_dd_axe";
 
-// AOS animations
-@use "aos/aos";
+// SAL (Scroll Animation Library)
+@use "vendors/sal";
 
 // Drupal specific, only enable when using Drupal.
 /* @use "drupal-components/_breadcrumb";

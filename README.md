@@ -35,9 +35,10 @@ source/                  # Source files (edit here)
 │   ├── components/      # Component styles (_dd_*.scss)
 │   ├── elements/        # Base element styles
 │   ├── regions/         # Header, footer, sidebar styles
-│   └── layouts/         # Page layout styles
+│   ├── layouts/         # Page layout styles
+│   └── vendors/         # Third-party SCSS (SAL)
 ├── js/
-│   ├── main.js          # JS entry point (AOS init)
+│   ├── main.js          # JS entry point (SAL init)
 │   ├── components/      # Component JS (_dd_*.js)
 │   └── vendors/         # Third-party JS libraries
 └── favicon/             # Source favicon image
@@ -126,7 +127,7 @@ graph TB
 | **Documentation** | PHP + Static HTML | Simple server-side includes for component demos |
 | **Local Dev** | Lando | Consistent development environment |
 | **Icons** | FontAwesome Pro | Comprehensive icon set with multiple styles |
-| **Animation** | AOS.js | Lightweight scroll animations |
+| **Animation** | SAL.js | Lightweight scroll animations |
 | **Accessibility** | axe-core | Automated A11y testing |
 
 ### Key Design Decisions

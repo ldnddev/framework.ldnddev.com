@@ -21,7 +21,7 @@ Cross-component dependency: **`dd-data-table`** and **`dd-finding`** both embed
 
 Shared conventions (matching existing components): BEM root `div.dd-{name}` /
 `span.dd-{name}`, grid helpers `dd-g` / `dd-u-1-1` / `l-box`, screen-reader text
-via `.-scrn-reader-only`, scroll-in via `data-aos`. `wraps_in_section: true`
+via `.-scrn-reader-only`, scroll-in via `data-sal`. `wraps_in_section: true`
 means the consumer wraps the component in a `dd-section`; atoms embedded inside
 other components use `false`.
 

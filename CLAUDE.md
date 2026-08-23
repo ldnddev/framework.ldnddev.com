@@ -38,11 +38,12 @@ Source files live in `/source/`, compiled output goes to `/web/assets/`. The `/w
 - `source/scss/elements/` - Base element styles (forms, text)
 - `source/scss/regions/` - Template regions (header, footer, sidebar)
 - `source/scss/layouts/` - Page layout styles
+- `source/scss/vendors/` - Third-party styles (SAL)
 - `source/scss/style.scss` - Main entry point importing all partials
 
 ### JavaScript
 
-- `source/js/main.js` - Entry point (initializes AOS on DOMContentLoaded)
+- `source/js/main.js` - Entry point (initializes SAL on DOMContentLoaded)
 - `source/js/components/` - Component JS (`_dd_*.js`), vanilla JS only
 - Components must initialize on `DOMContentLoaded` and re-initialize on `htmx:afterSettle` for HTMX compatibility
 
@@ -76,7 +77,7 @@ Responsive utility classes: `dd-g` (grid container), `dd-u-1-1` (full width), `d
 
 ## Vendor Libraries
 
-FontAwesome Pro (icons), AOS.js (scroll animations), Slick (carousel), Colorbox (lightbox), axe-core (accessibility testing).
+FontAwesome Pro (icons), SAL.js (scroll animations), Slick (carousel), Colorbox (lightbox), axe-core (accessibility testing).
 
 ## NPM Publishing Workflow
 

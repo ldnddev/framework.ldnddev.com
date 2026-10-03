@@ -28,4 +28,49 @@
       display: none;
     }
   }
+  & .dd-menu__toggle {
+    &-open {
+      display: block;
+    }
+    &-close {
+      display: none;
+    }
+    &.-active {
+      & .dd-menu__toggle-open {
+        display: none;
+      }
+      & .dd-menu__toggle-close {
+        display: block;
+      }
+    }
+  }
+  & .dd-search__toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 8px;
+    &:focus-visible {
+      outline: 2px solid variables.$c_text_primary;
+      outline-offset: 2px;
+      @include mixins.pref_dark {
+        outline-color: variables.$c_text_primary--dark;
+      }
+    }
+    &-open {
+      display: block;
+    }
+    &-close {
+      display: none;
+    }
+    &.-active {
+      & .dd-search__toggle-open {
+        display: none;
+      }
+      & .dd-search__toggle-close {
+        display: block;
+      }
+    }
+  }
 }

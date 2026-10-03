@@ -147,16 +147,25 @@ module.exports = (grunt) => {
         src: 'node_modules/axe-core/axe.min.js',
         dest: 'web/assets/vendors/axe/axe.min.js',
       },
-      nineaxe: {
+      ddaxe: {
         nonull: true,
         src: 'source/vendors/axe/dd-axe.js',
         dest: 'web/assets/vendors/axe/dd-axe.js',
+      },
+      webfonts: {
+        expand: true,
+        cwd: 'source/webfonts',
+        src: ['**/*'],
+        dest: 'web/assets/webfonts/',
       },
     },
     clean: {
       cssjs: [
         'web/assets/css',
         'web/assets/js'
+      ],
+      webfonts: [
+        'web/assets/webfonts'
       ],
       favicon: [
         'web/assets/favicon',
@@ -191,15 +200,22 @@ module.exports = (grunt) => {
             'web/**/*.php'
           ]
         },
-        options: {
-          https: true,
-          open: false,
-          browser: "google chrome",
-          watchTask: true,
-          proxy: {
-            target: "https://frameworkldnddev.lndo.site/",
+        options: (function () {
+          const proxy = process.env.BROWSERSYNC_PROXY;
+          const opts = {
+            open: false,
+            watchTask: true,
+          };
+          if (proxy) {
+            opts.proxy = { target: proxy };
+            if (proxy.indexOf('https://') === 0) {
+              opts.https = true;
+            }
+          } else {
+            opts.server = { baseDir: 'web' };
           }
-        }
+          return opts;
+        })(),
       }
     }
   });

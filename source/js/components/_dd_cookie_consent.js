@@ -1,10 +1,14 @@
 function dd_cookie_consent() {
   // Check if consent is already stored
   const consent = localStorage.getItem('dd_cookie_consent');
+  const popup = document.getElementById('cookie-consent');
   if (!consent) {
     // Show popup if no consent is stored
-    const popup = document.getElementById('cookie-consent');
     popup.style.display = 'block';
+  }
+  else if (consent === 'decline') {
+    // keep it hidden
+    popup.style.display = 'none';
   }
   else if (consent === 'accept') {
     // If consent is 'accept', add script tags
@@ -37,5 +41,8 @@ function addConsentScripts() {
     height="0" width="0" style="display:none;visibility:hidden"></iframe>`;
   document.body.insertBefore(noscript, document.body.firstChild);
 }
-// Initialize on page load
-window.onload = dd_cookie_consent;
+
+// Initialize on initial page load
+document.addEventListener('DOMContentLoaded', () => {
+  dd_cookie_consent();
+});

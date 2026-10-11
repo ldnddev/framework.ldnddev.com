@@ -54,10 +54,10 @@
                     "items": []
                   },
                   {
-                    "child_kind": "button",
+                    "child_kind": "link",
                     "child_link_label": "Components",
-                    "child_link_url": null,
-                    "child_link_target": null,
+                    "child_link_url": "/components",
+                    "child_link_target": "_self",
                     "child_link_css": null,
                     "items": [
                       {
@@ -231,10 +231,10 @@
                     ]
                   },
                   {
-                    "child_kind": "button",
+                    "child_kind": "link",
                     "child_link_label": "layouts",
-                    "child_link_url": null,
-                    "child_link_target": null,
+                    "child_link_url": "/layouts",
+                    "child_link_target": "_self",
                     "child_link_css": null,
                     "items": [
                       {
@@ -288,10 +288,10 @@
                     ]
                   },
                   {
-                    "child_kind": "button",
+                    "child_kind": "link",
                     "child_link_label": "Elements",
-                    "child_link_url": null,
-                    "child_link_target": null,
+                    "child_link_url": "/elements",
+                    "child_link_target": "_self",
                     "child_link_css": null,
                     "items": [
                       {
@@ -402,6 +402,7 @@
     {
       "id": "page-components-accordion",
       "slug": "components/accordion",
+      "slug_locked": false,
       "head": {
         "title": "Accordion Component Breakdown",
         "meta_title": "Accordion Component Breakdown | ldnddev Framework",
@@ -477,6 +478,7 @@
     {
       "id": "page-components-alert",
       "slug": "components/alert",
+      "slug_locked": false,
       "head": {
         "title": "Alert Component Breakdown",
         "meta_title": "Alert Component Breakdown | ldnddev Framework",
@@ -552,6 +554,7 @@
     {
       "id": "page-components-alternating",
       "slug": "components/alternating",
+      "slug_locked": false,
       "head": {
         "title": "Alternating Content Component Breakdown",
         "meta_title": "Alternating Content Component Breakdown | ldnddev Framework",
@@ -627,6 +630,7 @@
     {
       "id": "page-components-badge",
       "slug": "components/badge",
+      "slug_locked": false,
       "head": {
         "title": "Badge Component Breakdown",
         "meta_title": "Badge Component Breakdown | ldnddev Framework",
@@ -702,6 +706,7 @@
     {
       "id": "page-components-banner",
       "slug": "components/banner",
+      "slug_locked": false,
       "head": {
         "title": "Banner Component Breakdown",
         "meta_title": "Banner Component Breakdown | ldnddev Framework",
@@ -777,6 +782,7 @@
     {
       "id": "page-components-bar-chart",
       "slug": "components/bar-chart",
+      "slug_locked": false,
       "head": {
         "title": "Bar Chart Component Breakdown",
         "meta_title": "Bar Chart Component Breakdown | ldnddev Framework",
@@ -852,6 +858,7 @@
     {
       "id": "page-components-blockquote",
       "slug": "components/blockquote",
+      "slug_locked": false,
       "head": {
         "title": "Blockquote Component Breakdown",
         "meta_title": "Blockquote Component Breakdown | ldnddev Framework",
@@ -927,6 +934,7 @@
     {
       "id": "page-components-card",
       "slug": "components/card",
+      "slug_locked": false,
       "head": {
         "title": "Card Component Breakdown",
         "meta_title": "Card Component Breakdown | ldnddev Framework",
@@ -1002,6 +1010,7 @@
     {
       "id": "page-components-cta",
       "slug": "components/cta",
+      "slug_locked": false,
       "head": {
         "title": "CTA Component Breakdown",
         "meta_title": "CTA Component Breakdown | ldnddev Framework",
@@ -1077,6 +1086,7 @@
     {
       "id": "page-components-data-table",
       "slug": "components/data-table",
+      "slug_locked": false,
       "head": {
         "title": "Data Table Component Breakdown",
         "meta_title": "Data Table Component Breakdown | ldnddev Framework",
@@ -1152,6 +1162,7 @@
     {
       "id": "page-components-filmstrip",
       "slug": "components/filmstrip",
+      "slug_locked": false,
       "head": {
         "title": "Filmstrip Component Breakdown",
         "meta_title": "Filmstrip Component Breakdown | ldnddev Framework",
@@ -1227,6 +1238,7 @@
     {
       "id": "page-components-finding",
       "slug": "components/finding",
+      "slug_locked": false,
       "head": {
         "title": "Finding Component Breakdown",
         "meta_title": "Finding Component Breakdown | ldnddev Framework",
@@ -1302,6 +1314,7 @@
     {
       "id": "page-components-hero",
       "slug": "components/hero",
+      "slug_locked": false,
       "head": {
         "title": "Hero Component Breakdown",
         "meta_title": "Hero Component Breakdown | ldnddev Framework",
@@ -1377,6 +1390,7 @@
     {
       "id": "page-components-milestones",
       "slug": "components/milestones",
+      "slug_locked": false,
       "head": {
         "title": "Milestones Component Breakdown",
         "meta_title": "Milestones Component Breakdown | ldnddev Framework",
@@ -1452,6 +1466,7 @@
     {
       "id": "page-components-modal",
       "slug": "components/modal",
+      "slug_locked": false,
       "head": {
         "title": "Modal Component Breakdown",
         "meta_title": "Modal Component Breakdown | ldnddev Framework",
@@ -1527,6 +1542,7 @@
     {
       "id": "page-components-score-ring",
       "slug": "components/score-ring",
+      "slug_locked": false,
       "head": {
         "title": "Score Ring Component Breakdown",
         "meta_title": "Score Ring Component Breakdown | ldnddev Framework",
@@ -1602,6 +1618,7 @@
     {
       "id": "page-components-section",
       "slug": "components/section",
+      "slug_locked": false,
       "head": {
         "title": "Section Component Breakdown",
         "meta_title": "Section Component Breakdown | ldnddev Framework",
@@ -1677,6 +1694,7 @@
     {
       "id": "page-components-slider",
       "slug": "components/slider",
+      "slug_locked": false,
       "head": {
         "title": "Slider Component Breakdown",
         "meta_title": "Slider Component Breakdown | ldnddev Framework",
@@ -1752,6 +1770,7 @@
     {
       "id": "page-components-spacer",
       "slug": "components/spacer",
+      "slug_locked": false,
       "head": {
         "title": "Spacer component Breakdown",
         "meta_title": "Spacer component Breakdown | ldnddev Framework",
@@ -1827,6 +1846,7 @@
     {
       "id": "page-components-tabs",
       "slug": "components/tabs",
+      "slug_locked": false,
       "head": {
         "title": "Tabs Component Breakdown",
         "meta_title": "Tabs Component Breakdown | ldnddev Framework",
@@ -1902,6 +1922,7 @@
     {
       "id": "page-components-timeline",
       "slug": "components/timeline",
+      "slug_locked": false,
       "head": {
         "title": "Timeline",
         "meta_title": "Timeline | ldnddev Framework",
@@ -1965,6 +1986,7 @@
     {
       "id": "page-layouts-footer-large",
       "slug": "layouts/footer-large",
+      "slug_locked": false,
       "head": {
         "title": "Footer large",
         "meta_title": "Footer large | ldnddev Framework",
@@ -2034,6 +2056,7 @@
     {
       "id": "page-layouts-footer-medium",
       "slug": "layouts/footer-medium",
+      "slug_locked": false,
       "head": {
         "title": "Footer medium",
         "meta_title": "Footer medium | ldnddev Framework",
@@ -2103,6 +2126,7 @@
     {
       "id": "page-layouts-footer-small",
       "slug": "layouts/footer-small",
+      "slug_locked": false,
       "head": {
         "title": "Footer small",
         "meta_title": "Footer small | ldnddev Framework",
@@ -2172,6 +2196,7 @@
     {
       "id": "page-layouts-footer-001",
       "slug": "layouts/footer-001",
+      "slug_locked": false,
       "head": {
         "title": "Footer 001",
         "meta_title": "Footer 001 | ldnddev Framework",
@@ -2241,6 +2266,7 @@
     {
       "id": "page-layouts-header",
       "slug": "layouts/header",
+      "slug_locked": false,
       "head": {
         "title": "Header",
         "meta_title": "Header | ldnddev Framework",
@@ -2316,6 +2342,7 @@
     {
       "id": "page-layouts-grid",
       "slug": "layouts/grid",
+      "slug_locked": false,
       "head": {
         "title": "Grid",
         "meta_title": "Grid | ldnddev Framework",
@@ -2469,6 +2496,7 @@
     {
       "id": "page-elements-buttons",
       "slug": "elements/buttons",
+      "slug_locked": false,
       "head": {
         "title": "Buttons",
         "meta_title": "Buttons | ldnddev Framework",
@@ -2544,6 +2572,7 @@
     {
       "id": "page-elements-forms",
       "slug": "elements/forms",
+      "slug_locked": false,
       "head": {
         "title": "Forms",
         "meta_title": "Forms | ldnddev Framework",
@@ -2619,6 +2648,7 @@
     {
       "id": "page-elements-all-elements",
       "slug": "elements/all-elements",
+      "slug_locked": false,
       "head": {
         "title": "All HTML elements",
         "meta_title": "All HTML elements | ldnddev Framework",

@@ -14,6 +14,7 @@
     border: solid 1px variables.$c_ui_neutral_600;
     flex-direction: column;
     flex-wrap: wrap;
+    height: 100%;
   }
   &__image {
     line-height: 0px;
@@ -38,7 +39,7 @@
     //todo
   }
   &__links {
-    //todo
+    margin-top: auto;
   }
   &__link {
     //todo
@@ -52,10 +53,14 @@
       }
     }
     & .dd-card__image {
+      height: 100%;
       & img {
         height: 100%;
         object-fit: cover;
       }
+    }
+    & .dd-card__copy {
+      height: 100%;
     }
   }
   &.-no-image {

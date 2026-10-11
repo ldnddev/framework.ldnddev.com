@@ -35,7 +35,3 @@ function dd_tabs() {
 document.addEventListener('DOMContentLoaded', () => {
   dd_tabs();
 });
-// Fire axe after HTMX settles
-document.body.addEventListener("htmx:afterSettle", function (event) {
-  dd_tabs();
-});

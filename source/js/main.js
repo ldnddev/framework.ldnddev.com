@@ -13,16 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     enterEventName: 'sal:in',
     exitEventName: 'sal:out',
     selector: '[data-sal]', // elements to observe
-    once: false, // whether animation should happen only once
+    once: true, // whether animation should happen only once
     // Honor prefers-reduced-motion (WCAG 2.2 2.3.3)
     disabled: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
   });
 
-});
-
-// Re-observe elements injected by HTMX
-document.body.addEventListener("htmx:afterSettle", function () {
-  if (window.ddSal && typeof window.ddSal.update === 'function') {
-    window.ddSal.update();
-  }
 });

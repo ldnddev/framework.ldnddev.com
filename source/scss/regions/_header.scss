@@ -7,4 +7,10 @@
 header {
   @include mixins.position_relative();
   z-index: 10;
+  & .usa-flag {
+     display: inline-block;
+     & img {
+       max-width: 25px;
+     }
+  }
 }

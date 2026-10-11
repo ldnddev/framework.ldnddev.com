@@ -30,12 +30,14 @@
 @use "components/_dd_alternating";
 @use "components/dd_badge";
 @use "components/_dd_banner";
+@use "components/_dd_bar_chart";
 @use "components/_dd_blockquote";
 @use "components/_dd_card";
 @use "components/_dd_cookie_consent";
 @use "components/_dd_cta";
 @use "components/dd_data_table";
 @use "components/_dd_filmstrip";
+@use "components/_dd_finding";
 @use "components/_dd_footer";
 @use "components/_dd_header";
 @use "components/_dd_hero";
@@ -45,6 +47,7 @@
 @use "components/_dd_milestones";
 @use "components/_dd_modal";
 @use "components/_dd_navigation";
+@use "components/_dd_score_ring";
 @use "components/_dd_scrolltop";
 @use "components/_dd_search";
 @use "components/_dd_section";

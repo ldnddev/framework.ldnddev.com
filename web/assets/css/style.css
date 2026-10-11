@@ -3562,6 +3562,99 @@ ul.-nostyle li::marker {
   height: auto;
 }
 
+.dd-bar-chart {
+  margin: 0;
+}
+.dd-bar-chart__caption {
+  color: rgb(90, 95, 102);
+  font-size: 16px;
+  font-size: 1rem;
+  margin-block-end: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  .dd-bar-chart__caption {
+    color: rgb(158, 163, 170);
+  }
+}
+.dd-bar-chart__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dd-bar-chart__row {
+  display: grid;
+  grid-template-columns: minmax(6rem, auto) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+}
+.dd-bar-chart__label, .dd-bar-chart__value {
+  color: rgb(28, 30, 33);
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+@media (prefers-color-scheme: dark) {
+  .dd-bar-chart__label, .dd-bar-chart__value {
+    color: rgb(245, 246, 247);
+  }
+}
+.dd-bar-chart__value {
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: end;
+}
+.dd-bar-chart__track {
+  block-size: 12px;
+  inline-size: 100%;
+  min-inline-size: 0;
+  background-color: rgb(224, 227, 231);
+  border-radius: 999px;
+  overflow: hidden;
+}
+@media (prefers-color-scheme: dark) {
+  .dd-bar-chart__track {
+    background-color: rgb(42, 45, 49);
+  }
+}
+.dd-bar-chart__fill {
+  display: block;
+  block-size: 100%;
+  inline-size: 0;
+  background-color: rgb(90, 95, 102);
+  border-radius: inherit;
+}
+.dd-bar-chart__row.-good .dd-bar-chart__fill {
+  background-color: rgb(30, 132, 73);
+}
+@media (prefers-color-scheme: dark) {
+  .dd-bar-chart__row.-good .dd-bar-chart__fill {
+    background-color: rgb(130, 224, 170);
+  }
+}
+.dd-bar-chart__row.-warn .dd-bar-chart__fill {
+  background-color: rgb(185, 119, 14);
+}
+@media (prefers-color-scheme: dark) {
+  .dd-bar-chart__row.-warn .dd-bar-chart__fill {
+    background-color: rgb(245, 196, 105);
+  }
+}
+.dd-bar-chart__row.-bad .dd-bar-chart__fill {
+  background-color: rgb(169, 50, 38);
+}
+@media (prefers-color-scheme: dark) {
+  .dd-bar-chart__row.-bad .dd-bar-chart__fill {
+    background-color: rgb(229, 115, 115);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dd-bar-chart__fill {
+    transition: inline-size 0.6s ease;
+  }
+}
 .dd-blockquote {
   overflow: hidden;
 }
@@ -3970,6 +4063,116 @@ tbody tr:nth-child(even) .dd-data-table__td {
     animation-play-state: paused !important;
   }
 }
+.dd-finding__heading {
+  font-family: "LatoWebBold", sans-serif !important;
+  font-style: normal;
+  margin-block-end: 16px;
+}
+.dd-finding__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.dd-finding__item {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 12px;
+  padding: 14px 16px;
+  border-inline-start: solid 4px rgb(224, 227, 231);
+  background-color: rgb(242, 243, 245);
+  border-radius: 0 6px 6px 0;
+}
+@media (prefers-color-scheme: dark) {
+  .dd-finding__item {
+    border-inline-start-color: rgb(42, 45, 49);
+    background-color: rgb(26, 28, 31);
+  }
+}
+.dd-finding__item.-critical {
+  border-inline-start-color: rgb(241, 148, 138);
+}
+@media (prefers-color-scheme: dark) {
+  .dd-finding__item.-critical {
+    border-inline-start-color: rgb(203, 67, 53);
+  }
+}
+.dd-finding__item.-warning {
+  border-inline-start-color: rgb(245, 203, 167);
+}
+@media (prefers-color-scheme: dark) {
+  .dd-finding__item.-warning {
+    border-inline-start-color: rgb(185, 119, 14);
+  }
+}
+.dd-finding__item.-info {
+  border-inline-start-color: rgb(133, 193, 233);
+}
+@media (prefers-color-scheme: dark) {
+  .dd-finding__item.-info {
+    border-inline-start-color: rgb(40, 116, 166);
+  }
+}
+.dd-finding__item.-pass {
+  border-inline-start-color: rgb(130, 224, 170);
+}
+@media (prefers-color-scheme: dark) {
+  .dd-finding__item.-pass {
+    border-inline-start-color: rgb(39, 174, 96);
+  }
+}
+.dd-finding__badge {
+  padding-block-start: 2px;
+}
+.dd-finding__title {
+  font-family: "LatoWebBold", sans-serif !important;
+  font-style: normal;
+  color: rgb(28, 30, 33);
+  margin: 0 0 6px;
+}
+@media (prefers-color-scheme: dark) {
+  .dd-finding__title {
+    color: rgb(245, 246, 247);
+  }
+}
+.dd-finding__evidence, .dd-finding__fix {
+  color: rgb(90, 95, 102);
+  font-size: 15px;
+  font-size: 0.9375rem;
+  margin: 0 0 4px;
+}
+@media (prefers-color-scheme: dark) {
+  .dd-finding__evidence, .dd-finding__fix {
+    color: rgb(158, 163, 170);
+  }
+}
+.dd-finding__evidence a, .dd-finding__fix a {
+  color: inherit;
+  text-decoration: underline;
+}
+.dd-finding__evidence a:focus-visible, .dd-finding__fix a:focus-visible {
+  outline: 2px solid rgb(28, 30, 33);
+  outline-offset: 2px;
+}
+@media (prefers-color-scheme: dark) {
+  .dd-finding__evidence a:focus-visible, .dd-finding__fix a:focus-visible {
+    outline-color: rgb(245, 246, 247);
+  }
+}
+.dd-finding__fix-label {
+  font-weight: bold;
+}
+.dd-finding__empty {
+  color: rgb(90, 95, 102);
+}
+@media (prefers-color-scheme: dark) {
+  .dd-finding__empty {
+    color: rgb(158, 163, 170);
+  }
+}
+
 .dd-footer {
   background-color: rgb(249, 250, 251);
 }
@@ -4541,6 +4744,122 @@ body.-active {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'%3E%3Cpath d='M16.5 13.2018L13 15.5352V19.1315L19.1972 15L16.5 13.2018ZM14.6972 12L12 10.2018L9.30278 12L12 13.7982L14.6972 12ZM20 10.8685L18.3028 12L20 13.1315V10.8685ZM19.1972 9L13 4.86852V8.46482L16.5 10.7982L19.1972 9ZM7.5 10.7982L11 8.46482V4.86852L4.80278 9L7.5 10.7982ZM4.80278 15L11 19.1315V15.5352L7.5 13.2018L4.80278 15ZM4 13.1315L5.69722 12L4 10.8685V13.1315ZM2 9C2 8.66565 2.1671 8.35342 2.4453 8.16795L11.4453 2.16795C11.7812 1.94402 12.2188 1.94402 12.5547 2.16795L21.5547 8.16795C21.8329 8.35342 22 8.66565 22 9V15C22 15.3344 21.8329 15.6466 21.5547 15.8321L12.5547 21.8321C12.2188 22.056 11.7812 22.056 11.4453 21.8321L2.4453 15.8321C2.1671 15.6466 2 15.3344 2 15V9Z'%3E%3C/path%3E%3C/svg%3E");
 }
 
+.dd-score-ring {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+  color: rgb(28, 30, 33);
+  text-decoration: none;
+}
+@media (prefers-color-scheme: dark) {
+  .dd-score-ring {
+    color: rgb(245, 246, 247);
+  }
+}
+.dd-score-ring__svg {
+  inline-size: 120px;
+  block-size: 120px;
+}
+.dd-score-ring.-sm .dd-score-ring__svg {
+  inline-size: 72px;
+  block-size: 72px;
+}
+.dd-score-ring.-lg .dd-score-ring__svg {
+  inline-size: 160px;
+  block-size: 160px;
+}
+.dd-score-ring__track {
+  stroke: rgb(224, 227, 231);
+  stroke-width: 8;
+}
+@media (prefers-color-scheme: dark) {
+  .dd-score-ring__track {
+    stroke: rgb(42, 45, 49);
+  }
+}
+.dd-score-ring__value {
+  stroke: rgb(90, 95, 102);
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: none;
+}
+.dd-score-ring__num {
+  fill: rgb(28, 30, 33);
+  font-family: "LatoWebBold", sans-serif !important;
+  font-style: normal;
+  font-size: 30px;
+}
+@media (prefers-color-scheme: dark) {
+  .dd-score-ring__num {
+    fill: rgb(245, 246, 247);
+  }
+}
+.dd-score-ring__label {
+  font-family: "LatoWebBold", sans-serif !important;
+  font-style: normal;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+.dd-score-ring__sub {
+  color: rgb(90, 95, 102);
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+@media (prefers-color-scheme: dark) {
+  .dd-score-ring__sub {
+    color: rgb(158, 163, 170);
+  }
+}
+.dd-score-ring.-good .dd-score-ring__value {
+  stroke: rgb(30, 132, 73);
+}
+@media (prefers-color-scheme: dark) {
+  .dd-score-ring.-good .dd-score-ring__value {
+    stroke: rgb(130, 224, 170);
+  }
+}
+.dd-score-ring.-warn .dd-score-ring__value {
+  stroke: rgb(185, 119, 14);
+}
+@media (prefers-color-scheme: dark) {
+  .dd-score-ring.-warn .dd-score-ring__value {
+    stroke: rgb(245, 196, 105);
+  }
+}
+.dd-score-ring.-bad .dd-score-ring__value {
+  stroke: rgb(169, 50, 38);
+}
+@media (prefers-color-scheme: dark) {
+  .dd-score-ring.-bad .dd-score-ring__value {
+    stroke: rgb(229, 115, 115);
+  }
+}
+.dd-score-ring.-link {
+  min-inline-size: 24px;
+  min-block-size: 24px;
+  cursor: pointer;
+}
+.dd-score-ring.-link:hover .dd-score-ring__label {
+  text-decoration: underline;
+}
+.dd-score-ring.-link:focus-visible {
+  outline: 2px solid rgb(28, 30, 33);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+@media (prefers-color-scheme: dark) {
+  .dd-score-ring.-link:focus-visible {
+    outline-color: rgb(245, 246, 247);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dd-score-ring__value {
+    transition: stroke-dashoffset 0.6s ease;
+  }
+}
 /**
  * nine scrolltop.
  */

@@ -48,17 +48,27 @@
   font-weight: $weight  !important;
 }
 
-@mixin font_icon() {
-  font-family: "Font Awesome 6 Pro" !important;
-  font-style: normal;
-  font-weight: 900;
-  cursor: pointer;
-}
-
-@mixin font_icon_brand() {
-  font-family: "Font Awesome 6 Brands" !important;
-  font-style: normal;
-  font-weight: 900;
+// Remix Icon (https://remixicon.com/) masks: set -webkit-mask-image / mask-image
+// to the icon's SVG data URI; the icon takes the current text colour.
+@mixin icon_mask() {
+  content: '';
+  display: inline-block;
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-origin: content-box;
+  mask-origin: content-box;
+  -webkit-mask-clip: content-box;
+  mask-clip: content-box;
   cursor: pointer;
 }
 

@@ -130,9 +130,10 @@ module.exports = (grunt) => {
         dest: 'web/favicon.ico',
       },
       fonts: {
-        nonull: true,
-        src: 'source/fonts',
-        dest: 'web/assets/fonts',
+        expand: true,
+        cwd: 'source/fonts',
+        src: ['**/*'],
+        dest: 'web/assets/fonts/',
       },
       axe: {
         nonull: true,

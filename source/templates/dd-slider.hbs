@@ -1,0 +1,42 @@
+<div class="dd-slider">
+  {{#if has_parent_title}}
+  <div class="dd-slider__title">
+    <h2>{{parent_title}}</h2>
+  </div>
+  {{/if}}
+  <ul class="dd-slider__items -nostyle">
+    {{#each items}}
+    <li class="dd-slider__item" data-id="{{../parent_uid}}">
+      <div class="dd-slider__content">
+        <div class="dd-g">
+          <div class="dd-slider__body dd-u-1-1 dd-u-sm-1-1 dd-u-md-1-1 dd-u-lg-12-24 l-box">
+            <div class="dd-slider__title">
+              {{child_title}}
+            </div>
+            <div class="dd-slider__copy">
+              {{{child_copy_html}}}
+              {{#if has_links}}
+              <div class="dd-slider__links">
+                {{#each links}}
+                <div class="dd-slider__link">
+                  <a href="{{url}}" target="{{target}}" class="dd-button {{style}}">{{label}}</a>
+                </div>
+                {{/each}}
+              </div>
+              {{/if}}
+            </div>
+          </div>
+          <div class="dd-slider__image dd-u-1-1 dd-u-sm-1-1 dd-u-md-1-1 dd-u-lg-12-24">
+            {{> _media media}}
+          </div>
+        </div>
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+  <div class="dd-slider__navigation">
+    <button class="dd-slider__previous" id="dd-slider__previous"><span class="-scrn-reader-only">Previous slide</span> &lt; </button>
+    <ul class="dd-slider__tabs -nostyle"></ul>
+    <button class="dd-slider__next" id="dd-slider__next"><span class="-scrn-reader-only">Next slide</span> &gt; </button>
+  </div>
+</div>

@@ -1,231 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-search-index="/search-index.json">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="description" content="">
-    <meta name="author" content="ldnddev">
-    <title>ldnddev-Framework</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ldnddev Framework</title>
+  <meta name="description" content="Starter page" />
+  <link rel="canonical" href="https://framework.ldnddev.com/">
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="ldnddev Framework" />
+  <meta property="og:description" content="Starter page" />
+  
+  <meta property="og:url" content="https://framework.ldnddev.com/" />
+  <meta property="og:type" content="website" />
+  
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="stylesheet" href="assets/css/style.min.css" />
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "description": "Starter page",
+  "name": "ldnddev Framework",
+  "url": "https://framework.ldnddev.com/"
+}</script>
+</head>
 
-    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
-    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <body class="page page-index">
+    <a class="dd-skip-link" href="#main-content">Skip to main content</a>
+    <div name="page_top" id="page_top"></div>
+      <header class="dd-header">
 
-    <link rel="stylesheet" href="/assets/css/style.min.css">
-    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
-  </head>
+  <div class="dd-header__top">
+    <section class="dd-section -full-contained" id="header-section-1" aria-label="Content section">
+  <div class="dd-section__content">
+    
+    <div class="dd-section__items dd-g">
+      <div class="dd-section__item dd-u-8-24 dd-u-sm-8-24 dd-u-md-4-24 dd-u-lg-4-24 -y-center dd-header__logo l-box" id="header-section-1-column-1"><div class="dd-image">
+  <a href="/" target="_self" title="ldnddev, LLC">
+    <picture>
+      <source srcset="https://res.cloudinary.com/eojrsoca/image/upload/v1790540410/logo-full-white-text.svg" media="(prefers-color-scheme: dark)">
+      <img src="https://res.cloudinary.com/eojrsoca/image/upload/v1790540410/logo-full-black-text.svg" alt="ldnddev, LLC" class="dd-img" loading="lazy" />
+    </picture>
+  </a>
+</div>
 
-  <body class="dd-g" id="page_top">
-    <header class="dd-header dd-u-1-1">
-      <div class="dd-header__top">
-        <div class="dd-g">
-          <div class="dd-header__logo dd-u-1-1">
-            <a href="#" hx-get="/pages/home.html" hx-target="main" hx-swap="innterHTML">
-              <picture>
-                <source srcset="/assets/imgs/logo-full-white-text.svg" media="(prefers-color-scheme: dark)">
-                <img src="/assets/imgs/logo-full-black-text.svg" alt="logo" class="dd-img">
-              </picture>
-            </a>
-          </div>
+</div>
+
+<div class="dd-section__item dd-u-6-24 dd-u-sm-6-24 dd-u-md-16-24 dd-u-lg-18-24 -y-center l-box" id="header-section-1-column-2"><div class="dd-navigation navigation -main-menu -y-center">
+  <nav itemscope itemtype="https://schema.org/SiteNavigationElement" aria-label="header navigation">
+    <button class="dd-menu__close" type="button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="dd-menu__toggle-close">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"></path>
+      </svg>
+      <span class="visually-hidden">Menu</span>
+    </button>
+    <ul class="menu -y-center">
+            <li class="menu-item">
+              <a href="/" target="_self" class="">Home</a>
+            </li>
+    </ul>
+  </nav>
+</div>
+
+</div>
+
+<div class="dd-section__item dd-u-10-24 dd-u-sm-10-24 dd-u-md-4-24 dd-u-lg-2-24 dd-header__icons -y-center l-box" id="header-section-1-column-3"><div class="dd-header__menu-icon -y-center -x-center" data-sal="fade">
+  <button class="dd-menu__toggle" data-nav-initialized="true" type="button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="dd-menu__toggle-open">
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path fill="currentColor" d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1m0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1M3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1"></path>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="dd-menu__toggle-close">
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"></path>
+    </svg>
+    <span class="visually-hidden">Menu</span>
+  </button>
+</div>
+
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+  </div>
+  <dialog class="dd-search" id="dd-search" aria-labelledby="dd-search-title">
+    <div class="dd-search__panel">
+      <div class="dd-search__header">
+        <h2 class="dd-search__title" id="dd-search-title">Search</h2>
+        <button class="dd-search__close" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"></path>
+          </svg>
+          <span class="visually-hidden">Close search</span>
+        </button>
       </div>
-    </header>
-
-    <aside class="dd-section__item dd-u-1-1 dd-u-lg-6-24 l-box">
-      <div class="dd-header__navigation navigation dd-u-1-1" style="position: sticky; top: 0px;">
-        <nav itemscope itemtype="https://schema.org/SiteNavigationElement" aria-label="header navigation">
-          <ul class="-nostyle">
-            <li>
-              <button class="menu__link" hx-get="/pages/home.html" hx-target="main" hx-swap="innerHTML">Home</button>
-            </li>
-
-            <!-- Components -->
-            <li>
-              <div class="dd-accordion -primary">
-                <div class="dd-accordion__items">
-                  <details name="aside_menu" class="dd-accordion__item">
-                    <summary class="dd-accordion__header dd-g -y-center">
-                      <div class="dd-accordion__title dd-u-1-1">Components</div>
-                    </summary>
-                    <div class="dd-accordion__copy">
-                      <ul class="-nostyle">
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-accordion.html" hx-target="main" hx-swap="innerHTML">Accordion</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-alert.html" hx-target="main" hx-swap="innerHTML">Alert</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-alternating.html" hx-target="main" hx-swap="innerHTML">Alternating</a>
-                        </li>
-                    
-                        
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-badge.html" hx-target="main" hx-swap="innerHTML">Badge</a>
-                        </li>
-                    
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-banner.html" hx-target="main" hx-swap="innerHTML">Banner</span>
-                        </li>
-                    
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-bar-chart.html" hx-target="main" hx-swap="innerHTML">Bar Chart</a>
-                        </li>
-                    
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-blockquote.html" hx-target="main" hx-swap="innerHTML">Blockquote</span>
-                        </li>
-
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-card.html" hx-target="main" hx-swap="innerHTML">Card</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-cta.html" hx-target="main" hx-swap="innerHTML">cta</span>
-                        </li>
-                    
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-data-table.html" hx-target="main" hx-swap="innerHTML">Data Table</a>
-                        </li>
-                    
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-filmstrip.html" hx-target="main" hx-swap="innerHTML">filmstrip</span>
-                        </li>
-                    
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-finding.html" hx-target="main" hx-swap="innerHTML">Finding</a>
-                        </li>
-                    
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-hero.html" hx-target="main" hx-swap="innerHTML">hero</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-milestones.html" hx-target="main" hx-swap="innerHTML">milestones</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-modal.html" hx-target="main" hx-swap="innerHTML">modal</span>
-                        </li>
-                    
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-score-ring.html" hx-target="main" hx-swap="innerHTML">Score Ring</a>
-                        </li>
-                    
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-section.html" hx-target="main" hx-swap="innerHTML">Section</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-slider.html" hx-target="main" hx-swap="innerHTML">Slider</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-spacer.html" hx-target="main" hx-swap="innerHTML">Spacer</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-tabs.html" hx-target="main" hx-swap="innerHTML">Tabs</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-timeline.html" hx-target="main" hx-swap="innerHTML">timeline</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </details>
-                </div>
-              </div>
-            </li>
-
-            <!-- Layouts -->
-            <li>
-              <div class="dd-accordion -secondary">
-                <div class="dd-accordion__items">
-                  <details name="aside_menu" class="dd-accordion__item">
-                    <summary class="dd-accordion__header dd-g -y-center">
-                      <div class="dd-accordion__title dd-u-1-1">layouts</div>
-                    </summary>
-                    <div class="dd-accordion__copy">
-                      <ul class="-nostyle">
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-footer-large.html" hx-target="main" hx-swap="innerHTML">Footer Large</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-footer-medium.html" hx-target="main" hx-swap="innerHTML">Footer Medium</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-footer-small.html" hx-target="main" hx-swap="innerHTML">Footer Small</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-footer-001.html" hx-target="main" hx-swap="innerHTML">Footer 001</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-header.html" hx-target="main" hx-swap="innerHTML">Header</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-grid.html" hx-target="main" hx-swap="innerHTML">Grid</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </details>
-                </div>
-              </div>
-            </li>
-
-            <!-- Elements -->
-            <li>
-              <div class="dd-accordion -tertiary">
-                <div class="dd-accordion__items">
-                  <details name="aside_menu" class="dd-accordion__item">
-                    <summary class="dd-accordion__header dd-g -y-center">
-                      <div class="dd-accordion__title dd-u-1-1">Elements</div>
-                    </summary>
-                    <div class="dd-accordion__copy">
-                      <ul class="-nostyle">
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-buttons.html" hx-target="main" hx-swap="innerHTML">Buttons</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-forms.html" hx-target="main" hx-swap="innerHTML">Forms</span>
-                        </li>
-                        <li>
-                          <button class="-default" hx-get="/pages/dd-all-elements.html" hx-target="main" hx-swap="innerHTML">All Elements</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </details>
-                </div>
-              </div>
-            </li>
-
-          </ul>
-        </nav>
-      </div>
-      <style>
-      .menu__link {
-        font-size: 12px;
-      }
-      </style>
-    </aside>
-    <main class="dd-u-1-1 dd-u-lg-18-24" hx-trigger="load" hx-get="/pages/home.html">
-
-    </main>
-
-    <footer class="dd-footer dd-u-1-1">
-      <div class="dd-scrolltop">
-        <div class="dd-scrolltop__link">
-          <a href="#page_top" title="Click to scroll to the top of the page."><i class="fa-solid fa-chevrons-up"></i></a>
+      <form class="dd-search__form" action="/search/" method="get" role="search">
+        <label class="dd-search__label" for="dd-search-q">Search the site</label>
+        <div class="dd-search__field">
+          <input class="dd-search__input" type="search" id="dd-search-q" name="q" autocomplete="off" spellcheck="false" placeholder="Search pages, services, and insights" aria-describedby="dd-search-status">
+          <button class="dd-search__submit dd-button -primary" type="submit">Search</button>
         </div>
-      </div>
-      <div class="dd-g">
-        <div class="dd-footer__copyright dd-u-1-1">
-          <div class="l-box">
-            © 2025 ldnddev, LLC
-          </div>
-        </div>
-      </div>
-    </footer>
+      </form>
+      <p class="dd-search__status" id="dd-search-status" role="status"></p>
+      <ul class="dd-search__results" id="dd-search-results" hidden aria-label="Search results"></ul>
+      <p class="dd-search__more" hidden></p>
+    </div>
+  </dialog>
+</header>
 
-    <script src="/assets/vendors/axe/axe.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
-    <script src="/assets/js/main.js" defer></script>
-    <script src="/assets/vendors/axe/dd-axe.js" defer></script>
+      <main id="main-content" tabindex="-1">
+        <section class="dd-section -full-lg" id="section-1" aria-label="Content section">
+  <div class="dd-section__content">
+    
+    <div class="dd-section__items dd-g">
+      <div class="dd-section__item dd-u-1-1 l-box" id="section-1-column-1"><div class="dd-rich_text">
+  <div class="dd-rich_text__copy"><h1>Project Outline</h1>
+<h2>Fonts Used</h2>
+<p>The framework uses the Lato font family from the assets/fonts folder in the following weights:</p>
+<ul>
+<li>300 (Light)</li>
+<li>400 (Regular)</li>
+<li>700 (Bold)</li>
+</ul>
+<p>CSS file location to update fonts: <code>source/scss/partials/_fonts.scss</code></p>
+<h2>Colors Used</h2>
+<p>The framework defines a comprehensive color system including:</p>
+<ul>
+<li>Primary colors (brand identity)</li>
+<li>Action colors (CTAs, buttons, interactions)</li>
+<li>Semantic colors (success, warning, error, info)</li>
+<li>Text role colors</li>
+<li>Neutral UI colors</li>
+<li>Support/utility colors</li>
+<li>Admin button colors</li>
+<li>Social media colors</li>
+</ul>
+<p>CSS file location to update colors: <code>source/scss/partials/_variables.scss</code></p>
+<h2>Source SCSS Folder Structure</h2>
+<ul>
+<li>dd-framework.scss: Main framework entry point</li>
+<li>style.scss: Primary stylesheet entry point</li>
+<li>vendors/: Styles for third-party libraries (e.g., SAL)</li>
+<li>components/: SCSS files for reusable UI components (e.g., accordions, banners, cards)</li>
+<li>drupal-components/: Styles specific to Drupal CMS components</li>
+<li>elements/: Base styles for HTML elements (forms, tables, text, etc.)</li>
+<li>fonts/: Local fonts</li>
+<li>layouts/: Page-specific layout styles</li>
+<li>partials/: Utility files including variables, mixins, fonts, grid system, and custom animations</li>
+<li>regions/: Styles for page regions (header, footer, sidebar)</li>
+</ul>
+<h2>Source JS Folder Structure</h2>
+<ul>
+<li>main.js: Main JavaScript entry point</li>
+<li>components/: JavaScript files for interactive components (e.g., navigation, sliders, tabs)</li>
+<li>vendors/: Third-party JavaScript libraries (e.g., SAL)</li>
+</ul>
+</div>
+</div>
 
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+      </main>
+    <div class="dd-scrolltop">
+  <div class="dd-scrolltop__link">
+    <a href="#page_top" title="Click to scroll to the top of the page.">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path fill="currentColor" d="M7.41 18.41L6 17l6-6l6 6l-1.41 1.41L12 13.83zm0-6L6 11l6-6l6 6l-1.41 1.41L12 7.83z"></path>
+      </svg>
+    </a>
+  </div>
+</div>
+<div id="cookie-consent" class="l-box">
+  <p>We use cookies to enhance your experience. Do you consent to Google tracking?</p>
+  <button class="accept dd-button -primary" onclick="handleCookieConsent('accept')">Accept</button>
+  <button class="decline dd-button -secondary" onclick="handleCookieConsent('decline')">Decline</button>
+</div>
+<footer class="dd-footer">
+  <div class="dd-footer__content">
+<section class="dd-section -full-contained" id="footer-section-1" aria-label="Content section">
+  <div class="dd-section__content">
+    
+    <div class="dd-section__items dd-g">
+      <div class="dd-section__item dd-u-1-1 l-box" id="footer-section-1-column-1"></div>
+
+
+    </div>
+  </div>
+</section>
+
+
+  </div>
+  <div class="dd-footer__copyright"><div class="l-box">© 2026 ldnddev Framework</div></div>
+</footer>
+
+    <script src="assets/js/main.min.js"></script>
   </body>
 </html>

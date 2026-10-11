@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "pages": [
+    {
+      "url": "index.html",
+      "path": "/",
+      "title": "Home",
+      "description": "Starter page",
+      "body": "Home Project Outline Fonts Used The framework uses the Lato font family from the assets/fonts folder in the following weights: 300 (Light) 400 (Regular) 700 (Bold) CSS file location to update fonts: source/scss/partials/_fonts.scss Colors Used The framework defines a comprehensive color system including: Primary colors (brand identity) Action colors (CTAs, buttons, interactions) Semantic colors (success, warning, error, info) Text role colors Neutral UI colors Support/utility colors Admin button colors Social media colors CSS file location to update colors: source/scss/partials/_variables.scss Source SCSS Folder Structure dd-framework.scss: Main framework entry point style.scss: Primary stylesheet entry point vendors/: Styles for third-party libraries (e.g., SAL) components/: SCSS files for reusable UI components (e.g., accordions, banners, cards) drupal-components/: Styles specific to Drupal CMS components elements/: Base styles for HTML elements (forms, tables, text, etc.) fonts/: Local fonts layouts/: Page-specific layout styles partials/: Utility files including variables, mixins, fonts, grid system, and custom animations regions/: Styles for page regions (header, footer, sidebar) Source JS Folder Structure main.js: Main JavaScript entry point components/: JavaScript files for interactive components (e.g., navigation, sliders, tabs) vendors/: Third-party JavaScript libraries (e.g., SAL)",
+      "headings": []
+    }
+  ]
+}

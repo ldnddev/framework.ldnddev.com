@@ -26,6 +26,18 @@
 [hidden] {
   display: none !important;
 }
+.-hidden-sm {
+  display: none !important;
+  @include mixins.mq(lg) {
+    display: block !important;
+  }
+}
+.-hidden-lg {
+  display: block !important;
+  @include mixins.mq(lg) {
+    display: none !important;
+  }
+}
 .visually-hidden:not(:focus):not(:active),
 .-scrn-reader-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
@@ -40,6 +52,25 @@
 /**
  * classes for easy use
  */
+.-text-us-red {
+  color: #B22234;
+}
+.-text-us-blue {
+  color: #3C3B6E;
+}
+.-text-us-white {
+  color: #FFFFFF;
+}
+.-bg-us-red {
+  background-color: #B22234;
+}
+.-bg-us-blue {
+  background-color: #3C3B6E;
+}
+.-bg-us-white {
+  background-color: #FFFFFF;
+}
+
 .-text {
   &-primary {
     color: variables.$c_text_primary;
@@ -124,3 +155,8 @@
     background-color: variables.$c_ui_neutral_900;
   }
 }
+
+/* Skip link: hidden until keyboard focus. */
+.dd-skip-link { position: absolute; left: 0.5rem; top: -100px; z-index: 10000; padding: 0.75rem 1rem; background: #000; color: #fff; text-decoration: none; }
+.dd-skip-link:focus, .dd-skip-link:focus-visible { top: 0.5rem; outline: 3px solid #ffca76; }
+#main-content:focus { outline: none; }

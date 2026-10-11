@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "id": "site-1",
+  "name": "ldnddev Framework",
+  "theme": {
+    "primary_color": "#88d9f7",
+    "secondary_color": "#ffca76",
+    "tertiary_color": "#f98971",
+    "support_color": "#46be8c"
+  },
+  "header": {
+    "id": "header",
+    "custom_css": null,
+    "alert": null,
+    "sections": [
+      {
+        "id": "header-section-1",
+        "section_title": null,
+        "section_class": "-full-contained",
+        "item_box_class": "l-box",
+        "sal": "no-animation",
+        "columns": [
+          {
+            "id": "header-section-1-column-1",
+            "width_class": "dd-u-8-24 dd-u-sm-8-24 dd-u-md-4-24 dd-u-lg-4-24 -y-center dd-header__logo",
+            "components": [
+              {
+                "component_type": "image",
+                "sal": "no-animation",
+                "parent_image_url": "https://res.cloudinary.com/eojrsoca/image/upload/v1790540410/logo-full-black-text.svg",
+                "parent_image_url_dark": "https://res.cloudinary.com/eojrsoca/image/upload/v1790540410/logo-full-white-text.svg",
+                "parent_image_alt": "ldnddev, LLC",
+                "parent_link_url": "/",
+                "parent_link_target": "_self"
+              }
+            ]
+          },
+          {
+            "id": "header-section-1-column-2",
+            "width_class": "dd-u-6-24 dd-u-sm-6-24 dd-u-md-16-24 dd-u-lg-18-24 -y-center",
+            "components": [
+              {
+                "component_type": "navigation",
+                "parent_type": "dd-header__navigation",
+                "parent_class": "-main-menu",
+                "sal": "no-animation",
+                "items": [
+                  {
+                    "child_kind": "link",
+                    "child_link_label": "Home",
+                    "child_link_url": "/",
+                    "child_link_target": "_self",
+                    "child_link_css": null,
+                    "items": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "header-section-1-column-3",
+            "width_class": "dd-u-10-24 dd-u-sm-10-24 dd-u-md-4-24 dd-u-lg-2-24 dd-header__icons -y-center",
+            "components": [
+              {
+                "component_type": "header_menu",
+                "sal": "fade"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "id": "footer",
+    "custom_css": null,
+    "sections": [
+      {
+        "id": "footer-section-1",
+        "section_title": null,
+        "section_class": "-full-contained",
+        "item_box_class": "l-box",
+        "sal": "no-animation",
+        "columns": [
+          {
+            "id": "footer-section-1-column-1",
+            "width_class": "dd-u-1-1",
+            "components": []
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "page-home",
+      "slug": "index",
+      "slug_locked": true,
+      "head": {
+        "title": "Home",
+        "meta_title": "ldnddev Framework",
+        "meta_description": "Starter page",
+        "canonical_url": null,
+        "robots": "index, follow",
+        "schema_type": "WebPage",
+        "og_title": null,
+        "og_description": null,
+        "og_image": null
+      },
+      "nodes": [
+        {
+          "node_type": "section",
+          "id": "section-1",
+          "section_title": null,
+          "section_class": "-full-lg",
+          "item_box_class": "l-box",
+          "sal": "no-animation",
+          "columns": [
+            {
+              "id": "section-1-column-1",
+              "width_class": "dd-u-1-1",
+              "components": [
+                {
+                  "component_type": "rich_text",
+                  "parent_class": null,
+                  "sal": "no-animation",
+                  "parent_copy": "# Project Outline\n## Fonts Used\nThe framework uses the Lato font family from the assets/fonts folder in the following weights:\n\n- 300 (Light)\n- 400 (Regular)\n- 700 (Bold)\n\nCSS file location to update fonts: `source/scss/partials/_fonts.scss`\n\n## Colors Used\nThe framework defines a comprehensive color system including:\n\n- Primary colors (brand identity)\n- Action colors (CTAs, buttons, interactions)\n- Semantic colors (success, warning, error, info)\n- Text role colors\n- Neutral UI colors\n- Support/utility colors\n- Admin button colors\n- Social media colors\n\nCSS file location to update colors: `source/scss/partials/_variables.scss`\n\n## Source SCSS Folder Structure\n- dd-framework.scss: Main framework entry point\n- style.scss: Primary stylesheet entry point\n- vendors/: Styles for third-party libraries (e.g., SAL)\n- components/: SCSS files for reusable UI components (e.g., accordions, banners, cards)\n- drupal-components/: Styles specific to Drupal CMS components\n- elements/: Base styles for HTML elements (forms, tables, text, etc.)\n- fonts/: Local fonts\n- layouts/: Page-specific layout styles\n- partials/: Utility files including variables, mixins, fonts, grid system, and custom animations\n- regions/: Styles for page regions (header, footer, sidebar)\n\n## Source JS Folder Structure\n- main.js: Main JavaScript entry point\n- components/: JavaScript files for interactive components (e.g., navigation, sliders, tabs)\n- vendors/: Third-party JavaScript libraries (e.g., SAL)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "export_dir": "web",
+  "base_url": "https://framework.ldnddev.com/",
+  "lang": "en",
+  "pretty_urls": true
+}

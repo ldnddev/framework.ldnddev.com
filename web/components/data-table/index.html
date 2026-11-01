@@ -9,10 +9,17 @@
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Data Table Component Breakdown | ldnddev Framework" />
   <meta property="og:description" content="The dd-data-table component is an accessible table with a caption, scoped header cells, and optional status cells that embed the dd-badge component." />
-  
+  <meta property="og:image" content="https://framework.ldnddev.com/assets/images/og-default.png" />
+  <meta property="og:image:secure_url" content="https://framework.ldnddev.com/assets/images/og-default.png" />
+  <meta property="og:image:alt" content="White ldnddev logo above &quot;ldnddev Framework&quot; and the line &quot;ldnddev design to code framework and component library.&quot; on a dark grid background." />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
   <meta property="og:url" content="https://framework.ldnddev.com/components/data-table/" />
   <meta property="og:type" content="website" />
-  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://framework.ldnddev.com/assets/images/og-default.png" />
+  <meta name="twitter:image:alt" content="White ldnddev logo above &quot;ldnddev Framework&quot; and the line &quot;ldnddev design to code framework and component library.&quot; on a dark grid background." />
   <link rel="icon" type="image/png" href="../../assets/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../../assets/favicon/favicon.svg" />
   <link rel="shortcut icon" href="../../assets/favicon/favicon.ico" />
@@ -24,6 +31,7 @@
   "@context": "https://schema.org",
   "@type": "WebPage",
   "description": "The dd-data-table component is an accessible table with a caption, scoped header cells, and optional status cells that embed the dd-badge component.",
+  "image": "https://framework.ldnddev.com/assets/images/og-default.png",
   "name": "Data Table Component Breakdown | ldnddev Framework",
   "url": "https://framework.ldnddev.com/components/data-table/"
 }</script>
@@ -260,33 +268,32 @@ sorting behaviour are wired up by the component JS.</p>
 
 <div class="dd-rich_text">
   <div class="dd-rich_text__copy"><div class="dd-example">
-<!-- The scroll region's tabindex/role/aria-label are added by JS only when the
-     table overflows; data-label supplies the accessible name. -->
+
 <div class="dd-data-table">
   <div class="dd-data-table__scroll" data-label="Prioritized remediation tasks">
     <table class="dd-data-table__table" id="task-table">
       <caption class="dd-data-table__caption">Prioritized remediation tasks</caption>
       <thead>
         <tr>
-          <th scope="col" class="dd-data-table__th" data-align="start">ID</th>
-          <th scope="col" class="dd-data-table__th" data-align="start" aria-sort="none">
-            <button type="button" class="dd-data-table__sort" data-sort-key="priority">Priority<span class="dd-data-table__sort-ind" aria-hidden="true"></span></button>
+          <th class="dd-data-table__th" data-align="start">ID</th>
+          <th class="dd-data-table__th" data-align="start" aria-sort="none">
+            &lt;button type=&quot;button&quot; class=&quot;dd-data-table__sort&quot; data-sort-key=&quot;priority&quot;&gt;Priority<span class="dd-data-table__sort-ind" aria-hidden="true"></span>&lt;/button&gt;
           </th>
-          <th scope="col" class="dd-data-table__th" data-align="start">Finding</th>
-          <th scope="col" class="dd-data-table__th" data-align="end" aria-sort="none">
-            <button type="button" class="dd-data-table__sort" data-sort-key="effort">Effort<span class="dd-data-table__sort-ind" aria-hidden="true"></span></button>
+          <th class="dd-data-table__th" data-align="start">Finding</th>
+          <th class="dd-data-table__th" data-align="end" aria-sort="none">
+            &lt;button type=&quot;button&quot; class=&quot;dd-data-table__sort&quot; data-sort-key=&quot;effort&quot;&gt;Effort<span class="dd-data-table__sort-ind" aria-hidden="true"></span>&lt;/button&gt;
           </th>
         </tr>
       </thead>
       <tbody>
         <tr class="dd-data-table__row">
-          <th scope="row" class="dd-data-table__td" data-align="start">SEO-001</th>
+          <th class="dd-data-table__td" data-align="start">SEO-001</th>
           <td class="dd-data-table__td"><span class="dd-badge -critical"><span class="dd-badge__label">Critical</span></span></td>
           <td class="dd-data-table__td">Missing &lt;title&gt; tag</td>
           <td class="dd-data-table__td" data-align="end">2h</td>
         </tr>
         <tr class="dd-data-table__row">
-          <th scope="row" class="dd-data-table__td" data-align="start">SEO-002</th>
+          <th class="dd-data-table__td" data-align="start">SEO-002</th>
           <td class="dd-data-table__td"><span class="dd-badge -warning"><span class="dd-badge__label">Warning</span></span></td>
           <td class="dd-data-table__td">Thin meta description</td>
           <td class="dd-data-table__td" data-align="end">1h</td>

@@ -2694,6 +2694,10 @@
   ],
   "export_dir": "web",
   "base_url": "https://framework.ldnddev.com/",
+  "default_og_image": "/assets/images/og-default.png",
+  "default_og_image_alt": "White ldnddev logo above \"ldnddev Framework\" and the line \"ldnddev design to code framework and component library.\" on a dark grid background.",
+  "default_og_image_width": 1200,
+  "default_og_image_height": 630,
   "lang": "en",
   "pretty_urls": true
 }

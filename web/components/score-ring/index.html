@@ -9,10 +9,17 @@
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Score Ring Component Breakdown | ldnddev Framework" />
   <meta property="og:description" content="The dd-score-ring component is a radial SVG donut gauge that displays a score against a maximum, with a visible number and a short label." />
-  
+  <meta property="og:image" content="https://framework.ldnddev.com/assets/images/og-default.png" />
+  <meta property="og:image:secure_url" content="https://framework.ldnddev.com/assets/images/og-default.png" />
+  <meta property="og:image:alt" content="White ldnddev logo above &quot;ldnddev Framework&quot; and the line &quot;ldnddev design to code framework and component library.&quot; on a dark grid background." />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
   <meta property="og:url" content="https://framework.ldnddev.com/components/score-ring/" />
   <meta property="og:type" content="website" />
-  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://framework.ldnddev.com/assets/images/og-default.png" />
+  <meta name="twitter:image:alt" content="White ldnddev logo above &quot;ldnddev Framework&quot; and the line &quot;ldnddev design to code framework and component library.&quot; on a dark grid background." />
   <link rel="icon" type="image/png" href="../../assets/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../../assets/favicon/favicon.svg" />
   <link rel="shortcut icon" href="../../assets/favicon/favicon.ico" />
@@ -24,6 +31,7 @@
   "@context": "https://schema.org",
   "@type": "WebPage",
   "description": "The dd-score-ring component is a radial SVG donut gauge that displays a score against a maximum, with a visible number and a short label.",
+  "image": "https://framework.ldnddev.com/assets/images/og-default.png",
   "name": "Score Ring Component Breakdown | ldnddev Framework",
   "url": "https://framework.ldnddev.com/components/score-ring/"
 }</script>
@@ -260,32 +268,32 @@ or the <em>-link</em> anchor form to make it navigable.</p>
 
 <div class="dd-rich_text">
   <div class="dd-rich_text__copy"><div class="dd-example">
-<!-- Static figure form: svg carries the accessible name -->
+
 <div class="dd-score-ring -good">
-  <svg class="dd-score-ring__svg" viewBox="0 0 100 100" role="img" aria-label="Performance: 82 out of 100">
-    <circle class="dd-score-ring__track" cx="50" cy="50" r="42" fill="none" />
-    <circle class="dd-score-ring__value" cx="50" cy="50" r="42" fill="none" stroke-dasharray="263.9" stroke-dashoffset="47.5" transform="rotate(-90 50 50)" />
-    <text class="dd-score-ring__num" x="50" y="54" text-anchor="middle" aria-hidden="true">82</text>
-  </svg>
+  &lt;svg class=&quot;dd-score-ring__svg&quot; viewBox=&quot;0 0 100 100&quot; role=&quot;img&quot; aria-label=&quot;Performance: 82 out of 100&quot;&gt;
+    &lt;circle class=&quot;dd-score-ring__track&quot; cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;42&quot; fill=&quot;none&quot; /&gt;
+    &lt;circle class=&quot;dd-score-ring__value&quot; cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;42&quot; fill=&quot;none&quot; stroke-dasharray=&quot;263.9&quot; stroke-dashoffset=&quot;47.5&quot; transform=&quot;rotate(-90 50 50)&quot; /&gt;
+    &lt;text class=&quot;dd-score-ring__num&quot; x=&quot;50&quot; y=&quot;54&quot; text-anchor=&quot;middle&quot; aria-hidden=&quot;true&quot;&gt;82&lt;/text&gt;
+  &lt;/svg&gt;
   <div class="dd-score-ring__label">Performance</div>
   <div class="dd-score-ring__sub">13 checks</div>
 </div>
-<!-- Warn tone -->
+
 <div class="dd-score-ring -warn">
-  <svg class="dd-score-ring__svg" viewBox="0 0 100 100" role="img" aria-label="On-Page: 64 out of 100">
-    <circle class="dd-score-ring__track" cx="50" cy="50" r="42" fill="none" />
-    <circle class="dd-score-ring__value" cx="50" cy="50" r="42" fill="none" stroke-dasharray="263.9" stroke-dashoffset="95.0" transform="rotate(-90 50 50)" />
-    <text class="dd-score-ring__num" x="50" y="54" text-anchor="middle" aria-hidden="true">64</text>
-  </svg>
+  &lt;svg class=&quot;dd-score-ring__svg&quot; viewBox=&quot;0 0 100 100&quot; role=&quot;img&quot; aria-label=&quot;On-Page: 64 out of 100&quot;&gt;
+    &lt;circle class=&quot;dd-score-ring__track&quot; cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;42&quot; fill=&quot;none&quot; /&gt;
+    &lt;circle class=&quot;dd-score-ring__value&quot; cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;42&quot; fill=&quot;none&quot; stroke-dasharray=&quot;263.9&quot; stroke-dashoffset=&quot;95.0&quot; transform=&quot;rotate(-90 50 50)&quot; /&gt;
+    &lt;text class=&quot;dd-score-ring__num&quot; x=&quot;50&quot; y=&quot;54&quot; text-anchor=&quot;middle&quot; aria-hidden=&quot;true&quot;&gt;64&lt;/text&gt;
+  &lt;/svg&gt;
   <div class="dd-score-ring__label">On-Page</div>
 </div>
-<!-- Link form: the <a> owns the name, the svg is decorative -->
+
 <a class="dd-score-ring -bad -link" href="#section-security" aria-label="Security: 40 out of 100. View details">
-  <svg class="dd-score-ring__svg" viewBox="0 0 100 100" aria-hidden="true">
-    <circle class="dd-score-ring__track" cx="50" cy="50" r="42" fill="none" />
-    <circle class="dd-score-ring__value" cx="50" cy="50" r="42" fill="none" stroke-dasharray="263.9" stroke-dashoffset="158.3" transform="rotate(-90 50 50)" />
-    <text class="dd-score-ring__num" x="50" y="54" text-anchor="middle" aria-hidden="true">40</text>
-  </svg>
+  &lt;svg class=&quot;dd-score-ring__svg&quot; viewBox=&quot;0 0 100 100&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;circle class=&quot;dd-score-ring__track&quot; cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;42&quot; fill=&quot;none&quot; /&gt;
+    &lt;circle class=&quot;dd-score-ring__value&quot; cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;42&quot; fill=&quot;none&quot; stroke-dasharray=&quot;263.9&quot; stroke-dashoffset=&quot;158.3&quot; transform=&quot;rotate(-90 50 50)&quot; /&gt;
+    &lt;text class=&quot;dd-score-ring__num&quot; x=&quot;50&quot; y=&quot;54&quot; text-anchor=&quot;middle&quot; aria-hidden=&quot;true&quot;&gt;40&lt;/text&gt;
+  &lt;/svg&gt;
   <div class="dd-score-ring__label">Security</div>
   <div class="dd-score-ring__sub">View details</div>
 </a>

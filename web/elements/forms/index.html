@@ -9,10 +9,17 @@
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Forms | ldnddev Framework" />
   <meta property="og:description" content="The following shows all form elements with their default styles." />
-  
+  <meta property="og:image" content="https://framework.ldnddev.com/assets/images/og-default.png" />
+  <meta property="og:image:secure_url" content="https://framework.ldnddev.com/assets/images/og-default.png" />
+  <meta property="og:image:alt" content="White ldnddev logo above &quot;ldnddev Framework&quot; and the line &quot;ldnddev design to code framework and component library.&quot; on a dark grid background." />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
   <meta property="og:url" content="https://framework.ldnddev.com/elements/forms/" />
   <meta property="og:type" content="website" />
-  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://framework.ldnddev.com/assets/images/og-default.png" />
+  <meta name="twitter:image:alt" content="White ldnddev logo above &quot;ldnddev Framework&quot; and the line &quot;ldnddev design to code framework and component library.&quot; on a dark grid background." />
   <link rel="icon" type="image/png" href="../../assets/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../../assets/favicon/favicon.svg" />
   <link rel="shortcut icon" href="../../assets/favicon/favicon.ico" />
@@ -24,6 +31,7 @@
   "@context": "https://schema.org",
   "@type": "WebPage",
   "description": "The following shows all form elements with their default styles.",
+  "image": "https://framework.ldnddev.com/assets/images/og-default.png",
   "name": "Forms | ldnddev Framework",
   "url": "https://framework.ldnddev.com/elements/forms/"
 }</script>
@@ -246,99 +254,71 @@
 
 <div class="dd-rich_text">
   <div class="dd-rich_text__copy"><div class="dd-example">
-<label for="input__text">Form text</label>
-<input id="input__text" type="text" placeholder="text" />
+&lt;label for=&quot;input__text&quot;&gt;Form text&lt;/label&gt;
+<input id="input__text" type="text" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__password">Form password</label>
-<input id="input__password" type="password" placeholder="password" />
+&lt;label for=&quot;input__password&quot;&gt;Form password&lt;/label&gt;
+<input id="input__password" type="password" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__email">Form email</label>
-<input id="input__email" type="email" placeholder="email" />
+&lt;label for=&quot;input__email&quot;&gt;Form email&lt;/label&gt;
+<input id="input__email" type="email" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__url">Form url</label>
-<input id="input__url" type="url" placeholder="url" />
+&lt;label for=&quot;input__url&quot;&gt;Form url&lt;/label&gt;
+<input id="input__url" type="url" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__date">Form date</label>
+&lt;label for=&quot;input__date&quot;&gt;Form date&lt;/label&gt;
 <input id="input__date" type="date" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__month">Form month</label>
+&lt;label for=&quot;input__month&quot;&gt;Form month&lt;/label&gt;
 <input id="input__month" type="month" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__time">Form time</label>
+&lt;label for=&quot;input__time&quot;&gt;Form time&lt;/label&gt;
 <input id="input__time" type="time" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__datetime-local">Form datetime-local</label>
+&lt;label for=&quot;input__datetime-local&quot;&gt;Form datetime-local&lt;/label&gt;
 <input id="input__datetime-local" type="datetime-local" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__week">Form week</label>
+&lt;label for=&quot;input__week&quot;&gt;Form week&lt;/label&gt;
 <input id="input__week" type="week" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__number">Form number</label>
-<input id="input__number" type="number" min="1" max="10" />
+&lt;label for=&quot;input__number&quot;&gt;Form number&lt;/label&gt;
+<input id="input__number" type="number" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__tel">Form tel</label>
-<input
-  id="input__tel"
-  type="tel"
-  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-  minlength="9"
-  maxlength="14"
-  placeholder="555-555-5555"
-/>
+&lt;label for=&quot;input__tel&quot;&gt;Form tel&lt;/label&gt;
+<input id="input__tel" type="tel" />
 <p>Other examples:</p>
-<input
-  id="input__tel--areacode"
-  type="tel"
-  pattern="[0-9]{3}"
-  minlength="3"
-  maxlength="3"
-  placeholder="555"
-/>
+<input id="input__tel--areacode" type="tel" />
 -
-<input
-  id="input__tel--first"
-  type="tel"
-  pattern="[0-9]{3}"
-  minlength="3"
-  maxlength="3"
-  placeholder="555"
-/>
+<input id="input__tel--first" type="tel" />
 -
-<input
-  id="input__tel--second"
-  type="tel"
-  pattern="[0-9]{4}"
-  minlength="4"
-  maxlength="4"
-  placeholder="5555"
-/>
+<input id="input__tel--second" type="tel" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__file">Form file</label>
+&lt;label for=&quot;input__file&quot;&gt;Form file&lt;/label&gt;
 <input id="input__file" type="file" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__disabled">Input Disabled</label>
-<input id="input__disabled" type="text" value="Disabled" disabled />
+&lt;label for=&quot;input__disabled&quot;&gt;Input Disabled&lt;/label&gt;
+<input id="input__disabled" type="text" disabled />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__readonly">Input Readonly</label>
-<input id="input__readonly" type="text" value="Read Only" readonly />
+&lt;label for=&quot;input__readonly&quot;&gt;Input Readonly&lt;/label&gt;
+<input id="input__readonly" type="text" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__radio">Form radio</label>
+&lt;label for=&quot;input__radio&quot;&gt;Form radio&lt;/label&gt;
 <input id="input__radio" type="radio" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__checkbox">Form checkbox</label>
+&lt;label for=&quot;input__checkbox&quot;&gt;Form checkbox&lt;/label&gt;
 <input id="input__checkbox" type="checkbox" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__color">Form color</label>
+&lt;label for=&quot;input__color&quot;&gt;Form color&lt;/label&gt;
 <input id="input__color" type="color" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__button">Form button</label>
-<input id="input__button" type="button" value="Button" />
+&lt;label for=&quot;input__button&quot;&gt;Form button&lt;/label&gt;
+<input id="input__button" type="button" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__submit">Form submit</label>
-<input id="input__submit" type="submit" value="Submit" />
+&lt;label for=&quot;input__submit&quot;&gt;Form submit&lt;/label&gt;
+<input id="input__submit" type="submit" />
 <div class="dd-spacer -xxl -divider"></div>
-<label for="input__reset">Form reset</label>
-<input id="input__reset" type="reset" value="Reset" />
+&lt;label for=&quot;input__reset&quot;&gt;Form reset&lt;/label&gt;
+<input id="input__reset" type="reset" />
 <div class="dd-spacer -xxl -divider"></div>
 </div></div>
 </div>
